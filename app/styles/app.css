@@ -1,0 +1,15 @@
+html, body {
+  margin: 20px;
+}
+
+html, body {
+  margin: 20px;
+}
+
+.clickable-div {
+  cursor: pointer;
+}
+
+.results .stateface.icon {
+  float: right;
+}

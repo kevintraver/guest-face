@@ -1,0 +1,12 @@
+<div class="ui cards">
+  {{#each guests as |guest index|}}
+    {{guest-detail guest=guest index=index removeGuest=(action 'removeGuest')}}
+  {{/each}}
+</div>
+
+<div class="ui clearing divider"></div>
+
+<div class="ui action input">
+  {{input disabled=inputValid value=newGuestNames}}
+  <button class="ui button" {{action "addGuest" formattedNewGuestNames}}>New Guest</button>
+</div>
